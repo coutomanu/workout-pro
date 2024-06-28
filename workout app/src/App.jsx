@@ -1,22 +1,19 @@
-import './App.css';
-import React, { useEffect, useRef, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './pages/login';
-import Signup from './pages/signup';
-import Home from './pages/home.jsx';
-import Obesity from './pages/obesity';
+import "./App.css";
+import React, { useEffect, useRef, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
 
 function App() {
-    return (
-            <Router>
-                <Routes>
-                    <Route path="" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/signup" element={< Signup/>} />
-                    <Route path="/obesity" element={< Obesity/>} />
-                </Routes>
-            </Router>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
