@@ -16,8 +16,6 @@ Este sistema web permite aos usuários calcular seu Índice de Massa Corporal (I
 
 - **Frontend:** React.js para a interface do usuário responsiva e interativa.
 - **Backend:** Node.js com Express para o servidor e API.
-- **Banco de Dados:** MongoDB para armazenar dados do usuário, histórico de consultas e recomendações.
-- **Integração de Bot:** Implementação de um bot de conversação usando frameworks como Dialogflow ou Rasa.
 - **Estilo e Design:** Utilização de Tailwind CSS para estilização e responsividade da interface.
 
 ## Instalação
