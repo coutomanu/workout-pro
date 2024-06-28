@@ -199,18 +199,18 @@ const Navbar = () => {
                         </div>
                         <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
                             <a
-                                href="#"
+                                href="/login"
                                 className="inline-block px-5 py-2 transition-all duration-300 text-base font-medium text-black hover:opacity-50"
                             >
                                 Entrar
                             </a>
 
-                            <button
-                                onClick={() => {}}
+                            <a
+                                href="/signup"
                                 className="inline-block rounded-md bg-emerald-400 px-7 py-2 text-base font-medium text-black hover:bg-emerald-500 hover:text-dark transition-all duration-300"
                             >
                                 Cadastre-se
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
