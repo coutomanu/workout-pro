@@ -1,8 +1,8 @@
 import React from 'react';
-import camera from '../assets/Camera.webp'
-import fotodieta from '../assets/FOTO DIETA 1.jpg';
-import microfone from '../assets/Microfone.webp';
-import fotodieta2 from '../assets/dieta.jpg';
+import botzim from '../assets/BOT EMOJI.webp';
+import olho from '../assets/OLHOS EMOJI.webp';
+import treino from '../assets/TREINO.jpg';
+import treino2 from '../assets/TREINO 2.jpg';
 import Testimonial1 from '../components/depoimento.jsx';
 import Faq2 from '../components/pergunta.jsx';
 import Hero6 from '../components/hero6';
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <body>     
                 {/* Primeira sessao */}
-            <div>
+            <div id="incio">
                 <Hero6 />
             </div>
 
@@ -23,35 +23,31 @@ const Home = () => {
                     <div className="grid items-center gap-8 md:grid-cols-2 lg:gap-12 2xl:gap-20">
                         <div className="h-64 overflow-hidden rounded-lg flex justify-center md:h-auto">
                             <img
-                                src={fotodieta}
-                                alt="Foto Dieta"
+                                src={treino}
+                                alt="foto treino"
                                 className="w-2/3 rounded-lg object-cover object-center"
                             />
                         </div>
 
                         <div className="flex justify-center flex-col">
                             <img
-                                src={camera}
-                                alt="camera"
+                                src={olho}
+                                alt="olhos"
                                 className="w-10 mb-5 mx-auto"
                             />
 
                             <h1 className="text-3xl font-bold mb-6 text-center text-white">
-                                Adicione refeições com fotos
+                                Receba um treino personalizado
                             </h1>
 
                             <p className="mb-6 sm:text-lg md:mb-8 text-white text-center">
-                                Envie uma foto da sua refeição e calcularemos
-                                automaticamente as calorias e nutrientes ao
-                                longo do dia. Incluindo produtos
-                                industrializados.
+                                Coloque suas informações e receba um treino personalizado para o seu biotipo. Se você seguir esse treino, durante 60 dias, vai perceber a enorme mudança em seu corpo.
                             </p>
-                            <button
-                                onClick={() => {}}
-                                className="mx-auto bg-emerald-400 py-2.5 px-5 rounded-lg text-white border border-emerald-600 font-medium text-sm outline-none transition duration-100 hover:bg-emerald-500 focus-visible:ring ring-emerald-300 active:bg-emerald-600 md:text-base"
+                            <a
+                                className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
                             >
                                 Comece agora
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -65,30 +61,28 @@ const Home = () => {
                     <div className="grid items-center gap-8 md:grid-cols-2 lg:gap-12 2xl:gap-20">
                         <div className="order-2 md:order-1 flex justify-center flex-col">
                             <img
-                                src={microfone}
-                                alt="camera"
+                                src={botzim}
+                                alt="bot"
                                 className="w-10 mb-5 mx-auto"
                             />
 
                             <h1 className="text-3xl font-bold mb-6 text-center text-stone-900">
-                                Adicione refeições com áudios e textos
+                                Converse com um assistente 24h por dia
                             </h1>
 
                             <p className="mb-6 text-stone-900 sm:text-lg md:mb-8 text-center">
-                                Envie áudios ou textos sobre suas refeições e
-                                nossa IA reconhece os alimentos, incluindo
-                                produtos industrializados.
+                                Tire suas dúvidas relacionado a treino com nosso assistente a qualquer hora do dia. Ele vai estar pronto para te auxiliar a executar o movimento da melhor maneira.
                             </p>
                             <button
                                 onClick={() => {}}
-                                className="mx-auto bg-emerald-400 text-white py-2.5 px-5 rounded-lg border border-emerald-600 font-medium text-sm outline-none transition duration-100 hover:bg-emerald-500 focus-visible:ring ring-emerald-300 active:bg-emerald-600 md:text-base"
+                                className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
                             >
                                 Comece agora
                             </button>
                         </div>
                         <div className="h-64 overflow-hidden rounded-lg flex justify-center md:h-auto order-1 md:order-2">
                             <img
-                                src={fotodieta}
+                                src={treino2}
                                 alt="Foto Dieta"
                                 className="w-2/3 rounded-lg object-cover object-center"
                             />
@@ -100,7 +94,7 @@ const Home = () => {
             {/* // terceira sessao */}
 
             {/* quarta sessao */}
-            <div className="bg-white py-6 sm:py-8 lg:py-12">
+            <div id="funcao" className="bg-white py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     {/* <!-- texto - início --> */}
                     <div className="mb-10 md:mb-16">
@@ -320,7 +314,7 @@ const Home = () => {
                         {/* <!-- imagem - início --> */}
                         <div className="order-first h-48 w-full bg-emerald-400 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
                             <img
-                                src={fotodieta2}
+                                src={treino}
                                 loading="lazy"
                                 alt="Foto dieta"
                                 className="h-full w-full object-cover object-center"
@@ -366,7 +360,7 @@ const Home = () => {
 
             {/* Sétima sessao*/}
 
-            <div className="bg-white py-6 sm:py-8 lg:py-12">
+            <div id="plans" className="bg-white py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-lg px-4 md:px-8">
                     {/* <!-- texto - início --> */}
                     <div className="mb-10 md:mb-16">
@@ -632,36 +626,34 @@ const Home = () => {
                 <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div className="flex flex-col items-center border-t pt-6">
                         <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-                            <button
-                                onClick={() => {}}
+                            <a
+                            href="#funcao"
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 Funcionalidades
-                            </button>
-                            <button
-                                onClick={() => {}}
+                            </a>
+                            <a
+                            href="#plans"
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 Preços
-                            </button>
-                            <button
-                                onClick={() => {}}
+                            </a>
+                            <a
+                            href="#faq"
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 FAQ
-                            </button>
-                            <button
-                                onClick={() => {}}
+                            </a>
+                            <a
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 Termos
-                            </button>
-                            <button
-                                onClick={() => {}}
+                            </a>
+                            <a
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 Privacidade
-                            </button>
+                            </a>
                         </nav>
 
                         <div className="flex gap-4">

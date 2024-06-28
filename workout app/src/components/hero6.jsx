@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import logo1 from '../assets/FAVICON NUTRI AI.png';
+import logo1 from '../assets/FAVICON WORKOUT PRO.png';
+import logo2 from '../assets/LOGO WORKOUT PRO 1.png';
 import fotocelular from '../assets/CELULAR PRINCIPAL 1.png';
 
 const Hero6 = () => {
@@ -44,19 +45,16 @@ const Hero6 = () => {
                         <div className="w-full px-4">
                             <div className="hero-content text-center">
                                 <h1 className="mx-auto mb-3 max-w-[680px] text-4xl font-bold !leading-[1.208] text-black sm:text-4xl">
-                                    Siga sua dieta com a ajuda da I.A e a
-                                    simplicidade do Whatsapp
+                                    Controle seu Treino com um Assistente que tem Tudo o que você precisa
                                 </h1>
                                 <p className="mx-auto mb-9 max-w-[480px] text-base text-black">
-                                    O melhor assistente para te auxiliar durante
-                                    sua dieta. Você pode fazer qualquer pergunta
-                                    e vai ter as melhores respostas pouco tempo. Toque no botão abaixo e assine já!
+                                    Conquiste o shape inexplicáve em 60 dias com nosso assistente que te auxilia quando você mais precisa.
                                 </p>
                                 <ul className="flex flex-wrap items-center justify-center">
                                     <li className="mx-2 mb-3 sm:mx-4">
                                         <button
                                             onClick={() => {}}
-                                            className="inline-flex items-center justify-center rounded-md bg-emerald-400 px-7 py-[14px] text-center text-base font-medium text-dark hover:bg-emerald-500 transition-all duration-300"
+                                            className="inline-flex items-center justify-center rounded-md bg-yellow-400 px-7 py-[14px] text-center text-base font-medium text-dark hover:bg-yellow-500 transition-all duration-300"
                                         >
                                             Comece agora
                                         </button>
@@ -69,7 +67,7 @@ const Hero6 = () => {
                                             }
                                             className="flex items-center text-base font-medium text-black hover:opacity-90 transition-all duration-300"
                                         >
-                                            <span className="mr-4 flex h-[52px] w-[52px] items-center justify-center rounded-full bg-emerald-400">
+                                            <span className="mr-4 flex h-[52px] w-[52px] items-center justify-center rounded-full bg-yellow-400">
                                                 <svg
                                                     width="15"
                                                     height="15"
@@ -153,20 +151,17 @@ const Navbar = () => {
             <div className="container">
                 <div className="relative -mx-4 flex items-center justify-between">
                     <div className="w-60 max-w-full px-4">
-                        <button
-                            onClick={() => {}}
-                            className="inline-flex items-center gap-2.5 text-1xl font-bold text-black md:text-3xl"
+                        <a
+                            className="inline-flex items-center gap-2.5"
                         >
                             <img
                                 viewBox="0 0 95 94"
                                 width="95"
                                 height="94"
-                                className="h-auto w-6 md:w-8"
-                                src={logo1}
+                                src={logo2}
                                 alt="logo"
                             />
-                            Nutri Ai
-                        </button>
+                        </a>
                     </div>
                     <div className="flex w-full items-center justify-between px-4 pt-20 sm:pt-0">
                         <div>
@@ -188,12 +183,10 @@ const Navbar = () => {
                                 } `}
                             >
                                 <ul className="block lg:flex">
-                                    <ListItem NavLink="#">Início</ListItem>
-                                    <ListItem NavLink="#">Planos</ListItem>
-                                    <ListItem NavLink="#">
-                                        Funcionalidades
-                                    </ListItem>
-                                    <ListItem NavLink="#">FAQ</ListItem>
+                                    <ListItem NavLink="#inicio">Início</ListItem>
+                                    <ListItem NavLink="#plans">Planos</ListItem>
+                                    <ListItem NavLink="#funcao">Funcionalidades</ListItem>
+                                    <ListItem NavLink="#faq">FAQ</ListItem>
                                 </ul>
                             </nav>
                         </div>
@@ -207,7 +200,7 @@ const Navbar = () => {
 
                             <a
                                 href="/signup"
-                                className="inline-block rounded-md bg-emerald-400 px-7 py-2 text-base font-medium text-black hover:bg-emerald-500 hover:text-dark transition-all duration-300"
+                                className="inline-block rounded-md bg-yellow-400 px-7 py-2 text-base font-medium text-black hover:bg-yellow-500 hover:text-dark transition-all duration-300"
                             >
                                 Cadastre-se
                             </a>
