@@ -3,14 +3,22 @@ import botzim from '../assets/BOT EMOJI.webp';
 import olho from '../assets/OLHOS EMOJI.webp';
 import treino from '../assets/TREINO.jpg';
 import treino2 from '../assets/TREINO 2.jpg';
+import banner1 from '../assets/BANNER WORKOUT 1.jpg';
 import Testimonial1 from '../components/depoimento.jsx';
 import Faq2 from '../components/pergunta.jsx';
 import Hero6 from '../components/hero6';
+import { IoIosFitness } from 'react-icons/io';
+import { GiMuscleUp } from 'react-icons/gi';
+import { SlEnergy } from 'react-icons/sl';
+import { GiMedicines } from 'react-icons/gi';
+import { GiBrokenBone } from 'react-icons/gi';
+import { FaRunning } from 'react-icons/fa';
+import { FaTachometerAlt } from 'react-icons/fa';
 
 const Home = () => {
-  return (
-    <body>     
-                {/* Primeira sessao */}
+    return (
+        <body>
+            {/* Primeira sessao */}
             <div id="incio">
                 <Hero6 />
             </div>
@@ -41,11 +49,12 @@ const Home = () => {
                             </h1>
 
                             <p className="mb-6 sm:text-lg md:mb-8 text-white text-center">
-                                Coloque suas informações e receba um treino personalizado para o seu biotipo. Se você seguir esse treino, durante 60 dias, vai perceber a enorme mudança em seu corpo.
+                                Coloque suas informações e receba um treino
+                                personalizado para o seu biotipo. Se você seguir
+                                esse treino, durante 60 dias, vai perceber a
+                                enorme mudança em seu corpo.
                             </p>
-                            <a
-                                className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
-                            >
+                            <a className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base">
                                 Comece agora
                             </a>
                         </div>
@@ -56,7 +65,7 @@ const Home = () => {
             {/* // segunda sessao */}
 
             {/* terceira sessao */}
-            <div className="bg-slate-50	 py-6 sm:py-8 lg:py-12">
+            <div className="bg-gray-50	 py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-xl px-4 md:px-8">
                     <div className="grid items-center gap-8 md:grid-cols-2 lg:gap-12 2xl:gap-20">
                         <div className="order-2 md:order-1 flex justify-center flex-col">
@@ -71,7 +80,10 @@ const Home = () => {
                             </h1>
 
                             <p className="mb-6 text-stone-900 sm:text-lg md:mb-8 text-center">
-                                Tire suas dúvidas relacionado a treino com nosso assistente a qualquer hora do dia. Ele vai estar pronto para te auxiliar a executar o movimento da melhor maneira.
+                                Tire suas dúvidas relacionado a treino com nosso
+                                assistente a qualquer hora do dia. Ele vai estar
+                                pronto para te auxiliar a executar o movimento
+                                da melhor maneira.
                             </p>
                             <button
                                 onClick={() => {}}
@@ -99,13 +111,12 @@ const Home = () => {
                     {/* <!-- texto - início --> */}
                     <div className="mb-10 md:mb-16">
                         <h2 className="mb-4 text-center text-2xl font-bold text-stone-900 md:mb-6 lg:text-3xl">
-                            Benefícios de usar o nosso assistente!
+                            Benefícios de usar o nosso sistema
                         </h2>
 
                         <p className="mx-auto max-w-screen-md text-center text-stone-900 md:text-lg">
                             Nosso assitente é o melhor do mercado para te
-                            auxiliar na sua dieta. Vou te mostrar alguns
-                            benefícios você vai ter ao usar o Nutri AI.
+                            auxiliar a seguir um treino foda.
                         </p>
                     </div>
                     {/* <!-- texto - fim --> */}
@@ -113,21 +124,8 @@ const Home = () => {
                     <div className="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
                         {/* <!-- feature - início --> */}
                         <div className="flex gap-4 md:gap-6">
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-400 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                                    />
-                                </svg>
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 text-black shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                                <FaTachometerAlt className="text-2xl" />
                             </div>
 
                             <div>
@@ -135,9 +133,9 @@ const Home = () => {
                                     Controle de Peso
                                 </h3>
                                 <p className="mb-2 text-gray-500">
-                                    Com o monitoramento preciso da ingestão
-                                    calórica e dos exercícios, é mais fácil
-                                    manter ou alcançar o peso desejado.
+                                    Monitore suas atividades físicas e receba
+                                    treinos ajustados para atingir o peso
+                                    desejado.
                                 </p>
                             </div>
                         </div>
@@ -145,31 +143,18 @@ const Home = () => {
 
                         {/* <!-- feature - início --> */}
                         <div className="flex gap-4 md:gap-6">
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-400 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                                    />
-                                </svg>
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 text-black shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                                <FaRunning className="text-2xl" />
                             </div>
 
                             <div>
                                 <h3 className="mb-2 text-lg font-semibold md:text-xl">
-                                    Melhora na Nutrição
+                                    Melhora da Condição Física
                                 </h3>
                                 <p className="mb-2 text-gray-500">
-                                    A análise detalhada de macronutrientes e
-                                    micronutrientes ajuda a garantir uma dieta
-                                    balanceada e nutritiva.
+                                    Análises detalhadas e exercícios específicos
+                                    garantem uma evolução contínua na sua
+                                    performance.
                                 </p>
                             </div>
                         </div>
@@ -177,30 +162,17 @@ const Home = () => {
 
                         {/* <!-- feature - início --> */}
                         <div className="flex gap-4 md:gap-6">
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-400 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-                                    />
-                                </svg>
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 text-black shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                                <GiBrokenBone className="text-2xl" />
                             </div>
 
                             <div>
                                 <h3 className="mb-2 text-lg font-semibold md:text-xl">
-                                    Hidratação Adequada
+                                    Redução do Risco de Lesões
                                 </h3>
                                 <p className="mb-2 text-gray-500">
-                                    Os lembretes personalizados para consumo de
-                                    água ajudam a manter o corpo bem hidratado.
+                                    Treinos bem planejados ajudam a evitar
+                                    lesões comuns e a manter um corpo saudável.
                                 </p>
                             </div>
                         </div>
@@ -208,21 +180,8 @@ const Home = () => {
 
                         {/* <!-- feature - início --> */}
                         <div className="flex gap-4 md:gap-6">
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-400 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                                    />
-                                </svg>
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 text-black shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                                <GiMedicines className="text-2xl" />
                             </div>
 
                             <div>
@@ -240,31 +199,17 @@ const Home = () => {
 
                         {/* <!-- feature - início --> */}
                         <div className="flex gap-4 md:gap-6">
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-400 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                                    />
-                                </svg>
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 text-black shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                                <SlEnergy className="text-2xl" />
                             </div>
 
                             <div>
                                 <h3 className="mb-2 text-lg font-semibold md:text-xl">
-                                    Aumento da Energia
+                                    Aumento de Energia
                                 </h3>
                                 <p className="mb-2 text-gray-500">
-                                    Uma dieta equilibrada e adequada às
-                                    necessidades individuais pode aumentar os
-                                    níveis de energia.
+                                    Exercícios adequados às suas necessidades
+                                    ajudam a aumentar seus níveis de energia.
                                 </p>
                             </div>
                         </div>
@@ -272,31 +217,17 @@ const Home = () => {
 
                         {/* <!-- feature - início --> */}
                         <div className="flex gap-4 md:gap-6">
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-400 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                                    />
-                                </svg>
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 text-black shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                                <GiMuscleUp className="text-2xl" />
                             </div>
 
                             <div>
                                 <h3 className="mb-2 text-lg font-semibold md:text-xl">
-                                    Melhora na Digestão
+                                    Fortalecimento Muscular
                                 </h3>
                                 <p className="mb-2 text-gray-500">
-                                    A escolha de alimentos ricos em fibras e
-                                    nutrientes essenciais pode melhorar a saúde
-                                    digestiva.
+                                    Escolha de exercícios que aumentam a força e
+                                    a resistência muscular de maneira eficaz.
                                 </p>
                             </div>
                         </div>
@@ -310,13 +241,12 @@ const Home = () => {
 
             <div className="bg-white py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="flex flex-col border border-gray-300 overflow-hidden rounded-lg bg-emerald-400 sm:flex-row md:h-80">
+                    <div className="flex flex-col border border-gray-300 overflow-hidden rounded-lg bg-yellow-400 sm:flex-row md:h-80">
                         {/* <!-- imagem - início --> */}
-                        <div className="order-first h-48 w-full bg-emerald-400 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+                        <div className="order-first h-48 w-full bg-yellow-400 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
                             <img
-                                src={treino}
-                                loading="lazy"
-                                alt="Foto dieta"
+                                src={banner1}
+                                alt="Foto personal"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -324,25 +254,23 @@ const Home = () => {
 
                         {/* <!-- conteúdo - início --> */}
                         <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
-                            <h2 className="mb-4 text-left text-xl font-bold text-white md:text-2xl lg:text-4xl">
-                                Tenha o melhor assistente na palma da sua mão!
+                            <h2 className="mb-4 text-left text-xl font-bold text-black md:text-2xl lg:text-4xl">
+                                O treino mais completo e personalizado para você
                             </h2>
 
-                            <p className="mb-8 max-w-md text-left text-white">
+                            <p className="mb-8 max-w-md text-left text-black">
                                 Você vai ter acesso de um assistente 24h por dia
-                                e 7 dias na semana, onde ele vai te auxiliar e
-                                te ajudar em toda a sua dieta, trazendo
-                                informações sobre sua refeição, os
-                                macronutrientes dos alimentos e muito mais.
+                                e 7 dias na semana, um treino personalziado para
+                                você. Tudo isso para que você possa atinigir seu
+                                objetivo.
                             </p>
 
                             <div className="md:flex flex mt-auto">
-                                <button
-                                    onClick={() => {}}
-                                    className="inline-block rounded-lg border border-emerald-600 items-start bg-emerald-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-emerald-600 focus-visible:ring active:bg-emerald-600 md:text-base"
+                                <a
+                                    className="inline-block rounded-lg border border-gray-600 items-start bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-yellow-400 outline-none transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-yelloy-700 md:text-base"
                                 >
                                     Falar com nossa equipe
-                                </button>
+                                </a>
                             </div>
                         </div>
                         {/* <!-- conteúdo - fim --> */}
@@ -394,7 +322,7 @@ const Home = () => {
                                 </span>
                             </div>
                             <div className="mb-4 space-x-2">
-                                <span className="text-4xl font-bold text-emerald-500">
+                                <span className="text-4xl font-bold yellow-500">
                                     R$29
                                 </span>
                                 <span className="text-2xl text-stone-900">
@@ -402,7 +330,7 @@ const Home = () => {
                                 </span>
                             </div>
 
-                            <ul className="mb-6 space-y-2 text-left text-emerald-500">
+                            <ul className="mb-6 space-y-2 text-left text-yellow-500">
                                 <li className="flex items-center  gap-1.5">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -465,7 +393,7 @@ const Home = () => {
 
                             <button
                                 onClick={() => {}}
-                                className="block w-full rounded-lg bg-emerald-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-emerald-600 focus-visible:ring active:text-gray-200 md:text-base"
+                                className="block w-full rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none transition duration-100 hover:bg-yellow-600 focus-visible:ring active:text-gray-200 md:text-base"
                             >
                                 Quero plano basico
                             </button>
@@ -627,31 +555,27 @@ const Home = () => {
                     <div className="flex flex-col items-center border-t pt-6">
                         <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
                             <a
-                            href="#funcao"
+                                href="#funcao"
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 Funcionalidades
                             </a>
                             <a
-                            href="#plans"
+                                href="#plans"
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 Preços
                             </a>
                             <a
-                            href="#faq"
+                                href="#faq"
                                 className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
                             >
                                 FAQ
                             </a>
-                            <a
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
+                            <a className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600">
                                 Termos
                             </a>
-                            <a
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
+                            <a className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600">
                                 Privacidade
                             </a>
                         </nav>
@@ -715,7 +639,7 @@ const Home = () => {
 
             {/* //Nona sessao*/}
         </body>
-  );
+    );
 };
 
 export default Home;

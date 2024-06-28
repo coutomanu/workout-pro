@@ -45,10 +45,13 @@ const Hero6 = () => {
                         <div className="w-full px-4">
                             <div className="hero-content text-center">
                                 <h1 className="mx-auto mb-3 max-w-[680px] text-4xl font-bold !leading-[1.208] text-black sm:text-4xl">
-                                    Controle seu Treino com um Assistente que tem Tudo o que você precisa
+                                    Controle seu Treino com um Assistente que
+                                    tem Tudo o que você precisa
                                 </h1>
                                 <p className="mx-auto mb-9 max-w-[480px] text-base text-black">
-                                    Conquiste o shape inexplicáve em 60 dias com nosso assistente que te auxilia quando você mais precisa.
+                                    Conquiste o shape inexplicável em 60 dias com
+                                    nosso assistente que te auxilia quando você
+                                    mais precisa.
                                 </p>
                                 <ul className="flex flex-wrap items-center justify-center">
                                     <li className="mx-2 mb-3 sm:mx-4">
@@ -151,9 +154,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="relative -mx-4 flex items-center justify-between">
                     <div className="w-60 max-w-full px-4">
-                        <a
-                            className="inline-flex items-center gap-2.5"
-                        >
+                        <a className="inline-flex items-center gap-2.5">
                             <img
                                 viewBox="0 0 95 94"
                                 width="95"
@@ -183,9 +184,13 @@ const Navbar = () => {
                                 } `}
                             >
                                 <ul className="block lg:flex">
-                                    <ListItem NavLink="#inicio">Início</ListItem>
+                                    <ListItem NavLink="#inicio">
+                                        Início
+                                    </ListItem>
                                     <ListItem NavLink="#plans">Planos</ListItem>
-                                    <ListItem NavLink="#funcao">Funcionalidades</ListItem>
+                                    <ListItem NavLink="#funcao">
+                                        Funcionalidades
+                                    </ListItem>
                                     <ListItem NavLink="#faq">FAQ</ListItem>
                                 </ul>
                             </nav>

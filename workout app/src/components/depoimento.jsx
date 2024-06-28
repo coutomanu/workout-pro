@@ -5,19 +5,19 @@ export default function Testimonial1() {
         {
             name: 'John Textor',
             company: 'CEO / Giver',
-            text: 'Coloque aqui o texto do depoimento do seu cliente amado e satisfeito.',
+            text: 'Comecei a usar o aplicativo, testosterona, trembola e fez efeito muito rápido.',
             image: 'https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112',
         },
         {
             name: 'Josefina Marina',
             company: 'CMO / Leklek',
-            text: 'Coloque aqui o texto do depoimento do seu cliente amado e satisfeito.',
+            text: 'Estou forte para caramba, usei o aplicativo por 2 dias e estou parecendo uma mulher pedra.',
             image: 'https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112',
         },
         {
             name: 'Dembelê Teixeira',
             company: 'COO / Wix & Co',
-            text: 'Coloque aqui o texto do depoimento do seu cliente amado e satisfeito.',
+            text: 'Gostei muito do aplicativo, me fez parecer um ator de hollywood, sheipado demais.',
             image: 'https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500',
         },
     ];
@@ -50,7 +50,7 @@ export default function Testimonial1() {
                                 </div>
 
                                 <div>
-                                    <div className="text-center text-sm font-bold text-emerald-500 sm:text-left md:text-base">
+                                    <div className="text-center text-sm font-bold text-yellow-500 sm:text-left md:text-base">
                                         {testimonial.name}
                                     </div>
                                     <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
