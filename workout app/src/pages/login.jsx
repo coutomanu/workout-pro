@@ -3,12 +3,36 @@ import React, { useState } from 'react';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({ email: '', password: '' });
+
+  const validateForm = () => {
+    let valid = true;
+    let errors = { email: '', password: '' };
+
+    if (!email) {
+      errors.email = 'O campo de email é obrigatório.';
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = 'Por favor, insira um email válido.';
+      valid = false;
+    }
+
+    if (!password) {
+      errors.password = 'O campo de senha é obrigatório.';
+      valid = false;
+    }
+
+    setErrors(errors);
+    return valid;
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log('Email:', email);
-    console.log('Password:', password);
-    alert('Login realizado com sucesso!');
+    if (validateForm()) {
+      console.log('Email:', email);
+      console.log('Password:', password);
+      alert('Login realizado com sucesso!');
+    }
   };
 
   return (
@@ -27,6 +51,7 @@ const Login = () => {
               className="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Digite seu email"
             />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
           <div className="mb-4 w-full flex flex-col items-start">
             <label htmlFor="password" className="block text-gray-700 font-bold mb-2">Senha:</label>
@@ -39,6 +64,7 @@ const Login = () => {
               className="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Digite sua senha"
             />
+            {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
           </div>
           <button className='mt-4 w-full bg-emerald-400 py-2.5 px-5 rounded-lg text-white border border-emerald-600 font-medium text-sm outline-none transition duration-100 hover:bg-emerald-500 focus-visible:ring ring-emerald-300 active:bg-emerald-600 md:text-base' type="submit">LOGIN</button>
         </form>
