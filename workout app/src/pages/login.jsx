@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase/firebaseConfig';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -28,10 +30,16 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log('Email:', email);
-      console.log('Password:', password);
-      alert('Login realizado com sucesso!');
+    if(validateForm()) {
+      signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+        const user = userCredential.user;
+        console.log("Logado: ",user);
+        alert("Login Realizado com sucesso");
+    })
+    .catch((error)=> {
+      console.error("Error no login:",error)
+      alert("Error no login")
+    });
     }
   };
 
