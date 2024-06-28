@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { db, auth } from "../firebase/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
+
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -9,17 +11,30 @@ const Signup = () => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
   const [errors, setErrors] = useState({});
+  const [imc, setIMC] = useState("");
+  const navigate = useNavigate();
 
-  const cadastro = async () => {
+  const calculateIMC = () => {
+    if (height && weight) {
+      const heightInMeters = height / 100;
+      const imc = weight / (heightInMeters * heightInMeters);
+      return imc.toFixed(2);
+    }
+    return null;
+  };
+
+  const cadastro = async (calculatedIMC) => {
     try {
-      await addDoc(collection(db, "cadastro"), {
+      await addDoc(collection(db, "IMC-Peso"), {
         name,
         height,
         weight,
+        imc: calculatedIMC,
       });
       await createUserWithEmailAndPassword(auth, email, password);
 
       alert("Cadastro realizado com sucesso!");
+      navigate("/login")
     } catch (error) {
       console.error("Error adding document: ", error);
       alert("Erro ao cadastrar: " + error.message);
@@ -71,7 +86,8 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      cadastro();
+      const calculatedIMC = calculateIMC();
+      cadastro(calculatedIMC);
     }
   };
 
