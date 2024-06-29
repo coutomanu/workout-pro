@@ -12,7 +12,6 @@ const Signup = () => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
   const [errors, setErrors] = useState({});
-  const [imc, setIMC] = useState("");
   const navigate = useNavigate();
 
   const calculateIMC = () => {
@@ -30,10 +29,18 @@ const Signup = () => {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
-        password
+        password,
+        calculateIMC,
+        name,
+        height,
+        weight
       );
       const user = userCredential.user;
-      await setDoc(doc(imcpeso), {
+
+      // Armazenar uid no LocalStorage
+      localStorage.setItem("uid", user.uid);
+
+      await setDoc(doc(imcpeso, user.uid), {
         email: email,
         uid: user.uid,
         name: name,

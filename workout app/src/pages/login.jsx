@@ -36,25 +36,26 @@ const Login = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const userCredential = await signInWithEmailAndPassword(
-          auth,
-          email,
-          password
-        );
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         console.log("Logado: ", user);
-
+  
+        // Armazenar uid no LocalStorage
+        localStorage.setItem("uid", user.uid);
+  
         const userRef = doc(db, "IMC-Peso", user.uid);
         const userDoc = await getDoc(userRef);
-        console.log("UserDoc exists: ", userDoc.exists());
-        console.log("UserDoc data: ", userDoc.data());
-
+  
         if (userDoc.exists()) {
           const userData = userDoc.data();
           const name = userData.name;
-          const imc = parseFloat(userData.imc); // Convert to number
-          console.log(`Nome: ${name}, IMC: ${imc}`);
-
+          const imc = parseFloat(userData.imc);
+          const height = userData.height;
+          const weight = userData.weight;
+  
+          // Salvar dados no LocalStorage
+          localStorage.setItem("userData", JSON.stringify({ name, imc, height, weight }));
+  
           if (imc >= 30) {
             navigate("/obesity");
           } else if (imc >= 25) {
@@ -72,6 +73,7 @@ const Login = () => {
       }
     }
   };
+
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50">
