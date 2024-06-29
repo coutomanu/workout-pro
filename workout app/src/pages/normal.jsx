@@ -131,7 +131,7 @@ const Normal = () => {
                     </div>
 
                     <div className="py-8 text-center text-sm text-gray-400">
-                        © 2024 | Nutri AI - Todos os direitos reservados.
+                        © 2024 | Workout Pro - Todos os direitos reservados.
                     </div>
                 </footer>
             </div>

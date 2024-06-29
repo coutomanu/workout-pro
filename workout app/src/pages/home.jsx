@@ -54,7 +54,10 @@ const Home = () => {
                                 esse treino, durante 60 dias, vai perceber a
                                 enorme mudança em seu corpo.
                             </p>
-                            <a className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base">
+                            <a
+                                href="/signup"
+                                className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
+                            >
                                 Comece agora
                             </a>
                         </div>
@@ -85,12 +88,12 @@ const Home = () => {
                                 pronto para te auxiliar a executar o movimento
                                 da melhor maneira.
                             </p>
-                            <button
-                                onClick={() => {}}
+                            <a
+                                href="/signup"
                                 className="mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg  text-black border border-yellow-500 font-medium text-sm outline-none transition duration-100 hover:bg-yellow-500 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
                             >
                                 Comece agora
-                            </button>
+                            </a>
                         </div>
                         <div className="h-64 overflow-hidden rounded-lg flex justify-center md:h-auto order-1 md:order-2">
                             <img
@@ -267,6 +270,7 @@ const Home = () => {
 
                             <div className="md:flex flex mt-auto">
                                 <a
+                                    href="https://api.whatsapp.com/send?phone=554396303511"
                                     className="inline-block rounded-lg border border-gray-600 items-start bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-yellow-400 outline-none transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-yelloy-700 md:text-base"
                                 >
                                     Falar com nossa equipe
@@ -389,12 +393,12 @@ const Home = () => {
                                 </li>
                             </ul>
 
-                            <button
-                                onClick={() => {}}
+                            <a
+                                href="/signup"
                                 className="block w-full rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none transition duration-100 hover:bg-yellow-600 focus-visible:ring active:text-gray-200 md:text-base"
                             >
                                 Quero plano basico
-                            </button>
+                            </a>
                         </div>
                         {/* <!-- plano basic - fim --> */}
 
@@ -507,12 +511,12 @@ const Home = () => {
                                 {/* <!-- feat - end --> */}
                             </ul>
 
-                            <button
-                                onClick={() => {}}
+                            <a
+                                href="/signup"
                                 className="block w-full rounded-lg border border-yellow-400 bg-yellow-600 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-black outline-none transition duration-100 hover:bg-yellow-300 focus-visible:ring active:bg-yellow-300 md:text-base"
                             >
                                 Quero ter o Plus
-                            </button>
+                            </a>
                         </div>
                         {/* <!-- plano pro - fim --> */}
                     </div>

@@ -55,12 +55,12 @@ const Hero6 = () => {
                                 </p>
                                 <ul className="flex flex-wrap items-center justify-center">
                                     <li className="mx-2 mb-3 sm:mx-4">
-                                        <button
-                                            onClick={() => {}}
+                                        <a
+                                            href='/signup'
                                             className="inline-flex items-center justify-center rounded-md bg-yellow-400 px-7 py-[14px] text-center text-base font-medium text-dark hover:bg-yellow-500 transition-all duration-300"
                                         >
                                             Comece agora
-                                        </button>
+                                        </a>
                                     </li>
                                     <li className="mx-2 mb-3 sm:mx-4">
                                         <button
