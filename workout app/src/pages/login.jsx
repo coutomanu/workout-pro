@@ -56,10 +56,10 @@ const Login = () => {
           // Salvar dados no LocalStorage
           localStorage.setItem("userData", JSON.stringify({ name, imc, height, weight }));
   
-          if (imc >= 30) {
+          if (imc >= 25) {
             navigate("/obesity");
-          } else if (imc >= 25) {
-            navigate("/overweight");
+          } else if (imc <= 18.5) {
+            navigate("/lean");
           } else {
             navigate("/normal");
           }
