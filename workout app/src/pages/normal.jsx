@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import bannerImg from "../assets/banner-certo.jpg";
+import bannerImg from "../assets/banner-normal.jpg";
 
 const Normal = () => {
   const treinos = [

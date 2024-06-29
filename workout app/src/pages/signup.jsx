@@ -42,12 +42,12 @@ const Signup = () => {
         imc: calculatedIMC,
       });
 
-      if (calculatedIMC >= 30) {
-        navigate("/obesity");
-      } else if (calculatedIMC >= 25) {
-        navigate("/overweight");
-      } else {
+      if (calculatedIMC >= 18.5) {
         navigate("/normal");
+      } else if (calculatedIMC >= 25) {
+        navigate("/obesity");
+      } else {
+        navigate("/lean");
       }
     } catch (error) {
       console.error("Error adding document: ", error);
