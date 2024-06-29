@@ -239,9 +239,9 @@ const Home = () => {
 
             {/* quinta sessao*/}
 
-            <div className="bg-white py-6 sm:py-8 lg:py-12">
+            <div className="bg-black py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="flex flex-col border border-gray-300 overflow-hidden rounded-lg bg-yellow-400 sm:flex-row md:h-80">
+                    <div className="flex flex-col overflow-hidden rounded-lg bg-yellow-400 sm:flex-row md:h-80">
                         {/* <!-- imagem - início --> */}
                         <div className="order-first h-48 w-full bg-yellow-400 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
                             <img
@@ -346,7 +346,7 @@ const Home = () => {
                                     </svg>
 
                                     <span className="text-stone-900">
-                                        Interações ilimitadas
+                                        Treino personalizado para seu biotipo.
                                     </span>
                                 </li>
 
@@ -365,8 +365,7 @@ const Home = () => {
                                     </svg>
 
                                     <span className="text-stone-900">
-                                        Envio de refeições por foto, mensagem e
-                                        audio
+                                        Bot Personal Fitness
                                     </span>
                                 </li>
 
@@ -385,8 +384,7 @@ const Home = () => {
                                     </svg>
 
                                     <span className="text-stone-900">
-                                        Cadastro de receitas e alimentos
-                                        favoritos
+                                        Acompanhamento individual
                                     </span>
                                 </li>
                             </ul>
@@ -401,37 +399,37 @@ const Home = () => {
                         {/* <!-- plano basic - fim --> */}
 
                         {/* <!-- plano pro - início --> */}
-                        <div className="w-full rounded-lg bg-gradient-to-tr from-emerald-500 to-emerald-400 p-6 shadow-xl sm:w-1/2 sm:p-8">
+                        <div className="w-full rounded-lg bg-gradient-to-tr from-yellow-500 to-yellow-400 p-6 shadow-xl sm:w-1/2 sm:p-8">
                             <div className="mb-4 flex flex-col items-start justify-between gap-4 lg:flex-row">
                                 <div>
-                                    <h3 className="text-2xl font-semibold text-white sm:text-3xl">
-                                        Protocolo
+                                    <h3 className="text-start text-2xl font-semibold text-black sm:text-3xl">
+                                        Plus
                                     </h3>
-                                    <p className="text-white text-left">
+                                    <p className="text-black text-left">
                                         Plano Trimestral
                                     </p>
                                 </div>
 
-                                <span className="order-first inline-block rounded-full bg-emerald-300 bg-opacity-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white lg:order-none">
+                                <span className="order-first inline-block rounded-full bg-yellow-200 bg-opacity-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-black lg:order-none">
                                     O QUERIDINHO
                                 </span>
                             </div>
                             <div className="mb-1 space-x-2">
-                                <span className="text-xl text-white">
+                                <span className="text-xl text-black">
                                     De{' '}
                                     <span className="line-through">R$150</span>
                                 </span>
                             </div>
                             <div className="mb-4 space-x-2">
-                                <span className="text-4xl font-bold text-white">
+                                <span className="text-4xl font-bold text-black">
                                     R$79
                                 </span>
-                                <span className="text-2xl text-white">
+                                <span className="text-2xl text-black">
                                     /Trimestre
                                 </span>
                             </div>
 
-                            <ul className="mb-6 space-y-2 text-white">
+                            <ul className="mb-6 space-y-2 text-black">
                                 {/* <!-- feat - início --> */}
                                 <li className="flex items-center gap-1.5">
                                     <svg
@@ -485,26 +483,7 @@ const Home = () => {
                                         />
                                     </svg>
 
-                                    <span>Integração com relógio</span>
-                                </li>
-                                {/* <!-- feat - end --> */}
-
-                                {/* <!-- feat - início --> */}
-                                <li className="flex items-center gap-1.5">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-5 w-5 shrink-0"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-
-                                    <span>Assistente de dieta AI</span>
+                                    <span>Desconto em academias</span>
                                 </li>
                                 {/* <!-- feat - end --> */}
 
@@ -530,9 +509,9 @@ const Home = () => {
 
                             <button
                                 onClick={() => {}}
-                                className="block w-full rounded-lg border border-emerald-400 bg-emerald-600 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-emerald-700 focus-visible:ring active:bg-emerald-700 md:text-base"
+                                className="block w-full rounded-lg border border-yellow-400 bg-yellow-600 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-black outline-none transition duration-100 hover:bg-yellow-300 focus-visible:ring active:bg-yellow-300 md:text-base"
                             >
-                                Quero ter o Protocolo
+                                Quero ter o Plus
                             </button>
                         </div>
                         {/* <!-- plano pro - fim --> */}
@@ -556,26 +535,26 @@ const Home = () => {
                         <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
                             <a
                                 href="#funcao"
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
+                                className="text-gray-500 transition duration-100 hover:text-yellow-600 active:text-yellow-600"
                             >
                                 Funcionalidades
                             </a>
                             <a
                                 href="#plans"
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
+                                className="text-gray-500 transition duration-100 hover:text-yellow-600 active:text-yellow-600"
                             >
                                 Preços
                             </a>
                             <a
                                 href="#faq"
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
+                                className="text-gray-500 transition duration-100 hover:text-yellow-600 active:text-yellow-600"
                             >
                                 FAQ
                             </a>
-                            <a className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600">
+                            <a className="text-gray-500 transition duration-100 hover:text-yellow-600 active:text-yellow-600">
                                 Termos
                             </a>
-                            <a className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600">
+                            <a className="text-gray-500 transition duration-100 hover:text-yellow-600 active:text-yellow-600">
                                 Privacidade
                             </a>
                         </nav>

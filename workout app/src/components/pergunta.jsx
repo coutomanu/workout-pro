@@ -5,16 +5,16 @@ export default function Faq2() {
 
     const questions = [
         {
-            question: 'Quem nasceu primeiro: o ovo ou a galinha?',
-            answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eveniet numquam? Ipsum totam id quidem ullam saepe! Magnam odit enim voluptatum illo, earum quidem esse ipsum sunt dignissimos tempora recusandae!',
+            question: 'Como vou receber meu treino?',
+            answer: 'Assim que você acabar de se cadastrar na plataforma e com base na sua altura e peso, vamos te mostrar o seu treino personalizado e o acesso do bot para você conversar.',
         },
         {
-            question: 'Por que é melhor que o concorrente X?',
-            answer: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt unde sapiente officia aliquam repellendus dolorum aliquid suscipit placeat nisi dolore!',
+            question: 'O Workout Pro funciona para todo mundo?',
+            answer: 'Sim, funciona para todos os tipos de biotipo. Criamos um sistema pensado para você.',
         },
         {
             question: 'Como funciona o suporte?',
-            answer: 'O suporte é feito através do Discord, onde você pode tirar suas dúvidas e conversar com outros usuários.',
+            answer: 'Criamos o Bot Personal Fitness que responde suas dúvidas 24h por dia.',
         },
     ];
 
@@ -31,7 +31,7 @@ export default function Faq2() {
                     </h2>
 
                     <p className="mx-auto max-w-screen-md text-center text-stone-900 md:text-lg">
-                        Tudo que você precisa saber sobre o Nutri AI
+                        Tudo que você precisa saber sobre o Workout Pro
                     </p>
                 </div>
                 {/* <!-- texto - fim --> */}
