@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { db, auth } from "../firebase/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -33,8 +33,13 @@ const Signup = () => {
       });
       await createUserWithEmailAndPassword(auth, email, password);
 
-      alert("Cadastro realizado com sucesso!");
-      navigate("/login")
+      if (calculatedIMC >= 30) {
+        navigate("/obesity"); // redirect to obesity page if IMC is 30 or more
+      } else if (calculatedIMC >= 25) {
+        navigate("/overweight"); // redirect to overweight page if IMC is 25-29.9
+      } else {
+        navigate("/normal"); // redirect to normal weight page if IMC is less than 25
+      }
     } catch (error) {
       console.error("Error adding document: ", error);
       alert("Erro ao cadastrar: " + error.message);
