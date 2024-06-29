@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
-
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import bannerImg from "../assets/banner-normal.jpg";
+import bannerImg from "../assets/banner-certo.jpg";
 
 const Normal = () => {
   const treinos = [
@@ -164,7 +162,7 @@ const Normal = () => {
                     </div>
 
                     <div className="py-8 text-center text-sm text-gray-400">
-                        © 2024 | WorkOut Pro - Todos os direitos reservados.
+                        © 2024 | Nutri AI - Todos os direitos reservados.
                     </div>
                 </footer>
             </div>
