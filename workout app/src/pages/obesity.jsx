@@ -68,10 +68,10 @@ const Obesity = () => {
         </p>
 
         <a
-        href=""
+        href="https://api.whatsapp.com/send?phone=554396303511"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center mx-auto bg-emerald-400 cursor-pointer py-2.5 px-5 rounded-lg text-black border border-black font-medium text-sm outline-none transition duration-100 hover:bg-emerald-100 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
+        className="flex items-center justify-center mx-auto bg-yellow-400 cursor-pointer py-2.5 px-5 rounded-lg text-black border border-black font-medium text-sm outline-none transition duration-100 hover:bg-emerald-100 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
         >
         <FaWhatsapp className="mr-2 text-2xl" /> {/* Ícone do WhatsApp com margem à direita */}
         Acesse no bot no Whatsapp agora!
