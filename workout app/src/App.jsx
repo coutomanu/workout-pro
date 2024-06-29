@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import "./App.css";
 import React, { useEffect, useRef, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -17,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/obesity" element={<Obesity/>} />
+
         <Route path="/lean" element={<Lean/>} />
         <Route path="/normal" element={<Normal/>} />
       </Routes>

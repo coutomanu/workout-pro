@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import obesidadeImg from "../assets/banner-certo.jpg"
@@ -163,7 +164,7 @@ const Obesity = () => {
                     </div>
 
                     <div className="py-8 text-center text-sm text-gray-400">
-                        © 2024 | Nutri AI - Todos os direitos reservados.
+                        © 2024 | WorkOut Pro - Todos os direitos reservados.
                     </div>
                 </footer>
             </div>
