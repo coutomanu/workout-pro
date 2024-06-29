@@ -7,7 +7,7 @@ import banner1 from '../assets/BANNER WORKOUT 1.jpg';
 import Testimonial1 from '../components/depoimento.jsx';
 import Faq2 from '../components/pergunta.jsx';
 import Hero6 from '../components/hero6';
-import { IoIosFitness } from 'react-icons/io';
+// import { IoIosFitness } from 'react-icons/io';
 import { GiMuscleUp } from 'react-icons/gi';
 import { SlEnergy } from 'react-icons/sl';
 import { GiMedicines } from 'react-icons/gi';
