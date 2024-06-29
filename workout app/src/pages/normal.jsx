@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import bannerImg from "../assets/banner-certo.jpg";

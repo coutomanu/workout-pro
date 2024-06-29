@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import "./App.css";
 import React, { useEffect, useRef, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
