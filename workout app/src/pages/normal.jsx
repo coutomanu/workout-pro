@@ -69,7 +69,7 @@ const Normal = () => {
           href="https://api.whatsapp.com/send?phone=554396303511"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center mx-auto bg-yellow-400  cursor-pointer py-2.5 px-5 rounded-lg text-black border border-black font-medium text-sm outline-none transition duration-100 hover:bg-emerald-100 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
+          className="flex items-center justify-center mx-auto bg-yellow-400  cursor-pointer py-2.5 px-5 rounded-lg text-black border border-black font-medium text-sm outline-none transition duration-100 hover:bg-yellow-100 focus-visible:ring ring-emerald-300 active:bg-yellow-500 md:text-base"
         >
           <FaWhatsapp className="mr-2 text-2xl" />
           Acesse no bot no Whatsapp agora!
@@ -79,37 +79,6 @@ const Normal = () => {
       <div className="bg-white pt-4 sm:pt-10 lg:pt-12">
                 <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div className="flex flex-col items-center border-t pt-6">
-                        <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-                            <a
-                            href="#funcao"
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
-                                Funcionalidades
-                            </a>
-                            <a
-                            href="#plans"
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
-                                Preços
-                            </a>
-                            <a
-                            href="#faq"
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
-                                FAQ
-                            </a>
-                            <a
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
-                                Termos
-                            </a>
-                            <a
-                                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-                            >
-                                Privacidade
-                            </a>
-                        </nav>
-
                         <div className="flex gap-4">
                             <button
                                 onClick={() => {}}
