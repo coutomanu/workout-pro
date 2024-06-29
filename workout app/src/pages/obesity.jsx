@@ -63,7 +63,7 @@ const Obesity = () => {
 
       <div className="w-full p-10 mt-10">
         <p className="text-center w-full mb-14">
-            A obesidade é uma condição em que o excesso de gordura corporal prejudica a saúde, definida por um IMC de 30 ou mais. É um fator de risco para doenças como diabetes tipo 2, doenças cardíacas e certos tipos de câncer. Suas causas incluem fatores genéticos, comportamentais e ambientais. O tratamento envolve mudanças na dieta, aumento da atividade física e, em alguns casos, intervenções médicas.
+            A obesidade é uma condição em que o excesso de gordura corporal prejudica a saúde, definida por um IMC de 25 ou mais. É um fator de risco para doenças como diabetes tipo 2, doenças cardíacas e certos tipos de câncer. Suas causas incluem fatores genéticos, comportamentais e ambientais. O tratamento envolve mudanças na dieta, aumento da atividade física e, em alguns casos, intervenções médicas.
         </p>
 
         <a
