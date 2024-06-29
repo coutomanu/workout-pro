@@ -34,6 +34,7 @@ const Signup = () => {
             });
             await createUserWithEmailAndPassword(auth, email, password);
 
+<<<<<<< Updated upstream
             if (calculatedIMC >= 30) {
                 navigate('/obesity'); // redirect to obesity page if IMC is 30 or more
             } else if (calculatedIMC >= 25) {
@@ -46,6 +47,20 @@ const Signup = () => {
             alert('Erro ao cadastrar: ' + error.message);
         }
     };
+=======
+      if (calculatedIMC >= 30) {
+        navigate("/obesity");
+      } else if (calculatedIMC >= 25) {
+        navigate("/overweight"); 
+      } else {
+        navigate("/normal"); 
+      }
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Erro ao cadastrar: " + error.message);
+    }
+  };
+>>>>>>> Stashed changes
 
     const validateForm = () => {
         let valid = true;

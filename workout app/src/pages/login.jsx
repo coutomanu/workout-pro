@@ -40,6 +40,7 @@ const Login = () => {
                     const user = userCredential.user;
                     console.log('Logado: ', user);
 
+<<<<<<< Updated upstream
                     // Fetch user's IMC from Firestore
                     const userRef = doc(db, 'IMC-Peso', user.uid);
                     getDoc(userRef).then((doc) => {
@@ -64,6 +65,31 @@ const Login = () => {
                 });
         }
     };
+=======
+          const userRef = doc(db, "IMC-Peso", user.uid);
+          getDoc(userRef).then((doc) => {
+            if (doc.exists()) {
+              const imc = doc.data().imc;
+              if (imc >= 30) {
+                navigate("/obesity");
+              } else if (imc >= 25) {
+                navigate("/overweight"); 
+              } else {
+                navigate("/normal"); 
+              }
+            } else {
+              console.error("IMC não encontrado");
+              
+              navigate("/");
+          });
+        })
+        .catch((error) => {
+          console.error("Error no login:", error);
+          alert("Error no login");
+        });
+    }
+  };
+>>>>>>> Stashed changes
 
     return (
         <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50">
