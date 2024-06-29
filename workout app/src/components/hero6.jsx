@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import logo1 from '../assets/FAVICON WORKOUT PRO.png';
 import logo2 from '../assets/LOGO WORKOUT PRO 1.png';
 import fotocelular from '../assets/CELULAR PRINCIPAL 1.png';
 

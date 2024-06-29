@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import obesidadeImg from "../assets/banner-certo.jpg";
 import { doc, getDoc } from "firebase/firestore";
+import logo2 from "../assets/LOGO WORKOUT PRO 1.png";
 import { db } from "../firebase/firebaseConfig";
+import { MdOutlineExitToApp } from "react-icons/md";
 const Obesity = () => {
   const treinos = [
     {
@@ -67,9 +69,31 @@ const Obesity = () => {
     return <div>Loading...</div>; // Pode mostrar um spinner ou mensagem de carregamento
   }
 
-
   return (
     <div className="container mx-auto p-4 h-screen">
+      <div className="flex mb-8 w-full justify-between items-center">
+        <div className="w-60 max-w-full px-4">
+          <a className="inline-flex items-center gap-2.5">
+            <img
+              viewBox="0 0 95 94"
+              width="150"
+              height="150"
+              src={logo2}
+              alt="logo"
+            />
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="/"
+            className="inline-block px-5 py-2 transition-all duration-300 text-base font-medium text-black hover:opacity-50"
+          >
+            <MdOutlineExitToApp  className="text-3xl"/>
+          </a>
+        </div>
+      </div>
+
       <div
         className="flex flex-col items-center w-full mb-10 p-8 bg-cover bg-center rounded-lg shadow-lg h-56 justify-center"
         style={{ backgroundImage: `url(${obesidadeImg})` }}
@@ -118,33 +142,6 @@ const Obesity = () => {
       <div className="bg-white pt-4 sm:pt-10 lg:pt-12">
         <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="flex flex-col items-center border-t pt-6">
-            <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-              <a
-                href="#funcao"
-                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-              >
-                Funcionalidades
-              </a>
-              <a
-                href="#plans"
-                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-              >
-                Preços
-              </a>
-              <a
-                href="#faq"
-                className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600"
-              >
-                FAQ
-              </a>
-              <a className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600">
-                Termos
-              </a>
-              <a className="text-gray-500 transition duration-100 hover:text-emerald-600 active:text-emerald-600">
-                Privacidade
-              </a>
-            </nav>
-
             <div className="flex gap-4">
               <button
                 onClick={() => {}}
